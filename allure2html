@@ -13,8 +13,10 @@ For reference: These are the common places to find chrome.exe:
 
 Allure version: allure-2.27.0
 
+To generate html report from allure report:
+$ allure generate path/to/allure-results && allure open
 
-
+To generate single html file from allure report:
 $ allure generate --single-file path/to/allure-results && allure open
 
 
