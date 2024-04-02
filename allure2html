@@ -1,0 +1,30 @@
+allure instructions to convert allure report to html:
+
+Allure Report:
+(1) Run cmd to get a command window
+(2) cd C:\Program Files\Google\Chrome\Application>
+(3) Type chrome.exe --allow-file-access-from-files
+
+
+For reference: These are the common places to find chrome.exe:
+%ProgramFiles%\Google\Chrome\Application\chrome.exe
+%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe
+%LocalAppData%\Google\Chrome\Application\chrome.exe
+
+Allure version: allure-2.27.0
+
+
+
+$ allure generate --single-file path/to/allure-results && allure open
+
+
+Need to try this out: # Generate Allure report
+allure generate -c <allureresults folder> -o <output folder>
+
+
+
+Example:
+
+> allure generate --single-file -c C:\Bala\qa-production-sanity\build\allure-results -o c:\bala\al && allure open
+
+> allure open c:\bala\al
